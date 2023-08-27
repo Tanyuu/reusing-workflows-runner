@@ -15,7 +15,7 @@ jobs:
   runner 1-1:
     runs-on: windows-lastest
     steps: 
-      name: Output Environment Variables
-      run: |
-        echo "SHA: $GITHUB.SHA"
-        echo "REF: $GITHUB.REF"
+      - name: Output Environment Variables
+        run: |
+          echo "SHA: $GITHUB.SHA"
+          echo "REF: $GITHUB.REF"
