@@ -11,8 +11,11 @@ env:
   MYGET_API_TOKEN: ${{ SECRETS.MYGET_API_TOKEN }}
   NUGET_API_TOKEN: ${{ SECRETS.NUGET_API_KEY }}
   COVERALLS_REPO_TOKEN: ${{ SECRETS.COVERALLS_REPO_TOKEN }}
-steps: 
-  name: Output Environment Variables
-  run: |
-    echo "SHA: $GITHUB.SHA"
-    echo "REF: $GITHUB.REF"
+jobs:
+  runner 1-1:
+    runs-on: windows-lastest
+    steps: 
+      name: Output Environment Variables
+      run: |
+        echo "SHA: $GITHUB.SHA"
+        echo "REF: $GITHUB.REF"
