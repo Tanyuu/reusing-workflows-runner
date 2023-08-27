@@ -1,5 +1,6 @@
 name: runner1
-on: workflow-call
+on: 
+  workflow-call:
 env:
   SHA: ${{ GITHUB.SHA }}
   REF: ${{ GITHUB.REF }}
